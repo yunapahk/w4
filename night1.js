@@ -1,6 +1,6 @@
-// give the class at least 3 properties
 
-// give the class at least 3 methods
+
+
 
 // create two instances of the class (two cats)
 
@@ -10,37 +10,39 @@
 
 class Cat {
     constructor(name, age, color) {
+      // give the class at least 3 properties
       this.name = name;
       this.age = age;
       this.color = color;
     }
-  
-    eat(food) {
-      console.log(`${this.name} is eating ${food}!`);
+
+    // give the class at least 3 methods
+    eat(tuna) {
+      console.log(`${this.name} is eating ${tuna}.`);
+    } 
+
+    drink(milk) {
+      console.log(`${this.name} is drinking ${milk}!`);
     }
   
-    sleep(hours) {
-      console.log(`${this.name} is sleeping for ${hours} hours.`);
-    }
-  
-    meow() {
-      console.log(`${this.name} says meow!`);
+    cuddle(hours) {
+      console.log(`${this.name} wants to cuddle for ${hours}`);
     }
   }
   
   // create two instances of the class
-  const fluffy = new Cat("Fluffy", 2, "white");
-  const whiskers = new Cat("Whiskers", 5, "gray");
+  const cutiePie = new Cat("Cutie Pie", 2, "adorable");
+  const Fatty = new Cat("Fatty", 5, "Ginormous");
   
   // log both instances to see their properties
-  console.log(fluffy);
-  console.log(whiskers);
+  console.log(cutiePie);
+  console.log(Fatty);
   
   // invoke each method from both instances
-  fluffy.eat("fish");
-  fluffy.sleep(8);
-  fluffy.meow();
+  cutiePie.eat("smelly");
+  cutiePie.drink("Baileys");
+  cutiePie.cuddle(24);
   
-  whiskers.eat("chicken");
-  whiskers.sleep(12);
-  whiskers.meow();
+  Fatty.eat("victims");
+  Fatty.drink("Jameson");
+  Fatty.cuddle(24);
